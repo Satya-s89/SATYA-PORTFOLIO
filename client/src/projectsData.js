@@ -1,15 +1,16 @@
 // src/projectsData.js
-// import TradeBro from './images/'
+import TradeBro from './images/tradebro.png'
 import squad from './images/squad.png'
 import uw from './images/uw.png'
 import ba from "./images/TradeBro-Figma.png"
 import dash from './images/dashboard.png'
+import v2n from "./images/v2n.png"
 
 const projects = [
   {
     id: 'tradebro',
     title: 'TradeBro',
-    // image: TradeBro,
+    image: TradeBro,
     short: 'An AI-powered virtual stock trading platform with real-time market insights.',
     full: `TradeBro is a full-stack virtual trading platform that blends AI-driven insights with an interactive stock market simulation. 
 It allows users to trade with virtual money, track portfolios, and gain hands-on experience without financial risk.
@@ -83,17 +84,34 @@ This project demonstrates frontend fundamentals, emphasizing layout precision an
     short: 'Data-driven admin and analytics dashboard UI prototype.',
     full: `A professional, high-fidelity Figma design showcasing a modern analytics dashboard for administrative and reporting use.
 
-Features:
-- KPI cards, interactive charts, and dynamic data tables
-- Light and dark mode compatibility for accessibility
-- Sidebar navigation with modular, scalable sections
-- Optimized layout for SaaS, CMS, and reporting platforms
+    Features:
+      - KPI cards, interactive charts, and dynamic data tables
+      - Light and dark mode compatibility for accessibility
+      - Sidebar navigation with modular, scalable sections
+      - Optimized layout for SaaS, CMS, and reporting platforms
 
-Highlights expertise in data visualization, information hierarchy, and intuitive dashboard UX patterns.`,
-    stacks: ['Figma', 'UI/UX Design', 'Data Visualization'],
-    link: 'https://www.figma.com/design/okqMdK4YZJoc81J6ClGGXu/Assignment---Working-with-Colours--Copy-?node-id=8121-2&t=EheuquDP8guXywKI-1'
-}
+      Highlights expertise in data visualization, information hierarchy, and intuitive dashboard UX patterns.`,
+        stacks: ['Figma', 'UI/UX Design', 'Data Visualization'],
+        link: 'https://www.figma.com/design/okqMdK4YZJoc81J6ClGGXu/Assignment---Working-with-Colours--Copy-?node-id=8121-2&t=EheuquDP8guXywKI-1'
+  },
+  {
+    id: 'voice2note',
+    title: 'Voice2Note – Speech to Text Web App',
+    image: v2n, // replace with your actual imported image variable
+    short: 'A real-time speech-to-text web application for effortless note-taking.',
+    full: `Voice2Note is a modern web application that converts speech into editable text in real time, enabling fast and hands-free note-taking.
 
+    Features:
+      - Real-time voice recognition and transcription
+      - Option to edit, copy, and save notes instantly
+      - Minimal and responsive UI for all devices
+      - Supports multiple languages and accents
+      - Powered by modern JavaScript APIs for optimal performance
+
+      Highlights expertise in web APIs, accessibility, and delivering smooth, real-time user experiences.`,
+    stacks: ['JavaScript', 'Web Speech API', 'React.js', 'UI/UX Design'],
+    link: 'https://voice2note.netlify.app/'
+  }
 ]
 
 export default projects

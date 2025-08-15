@@ -11,6 +11,6 @@ A personal portfolio website built using **React.js** to showcase my projects, s
 - Smooth animations and transitions
 
 ## 🛠 Tech Stack
-- **Frontend:** React.js, HTML5, CSS3, JavaScript (ES6+)
-- **Styling:** Custom CSS / SCSS
-- **Deployment:** Netlify / Vercel / GitHub Pages
+- **Frontend:** React.js, HTML5, CSS3, Tailwind
+- **Styling:** Custom CSS / Tailwind
+- **Deployment:** Netlify 

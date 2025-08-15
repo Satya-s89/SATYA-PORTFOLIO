@@ -1,0 +1,63 @@
+ul li {
+  position: relative;
+  color: inherit;
+  padding: 1px;
+  font-family: 'ClashDisplay', sans-serif;
+  cursor: pointer;
+}
+
+ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 1.5px;
+  background-color: currentColor;
+}
+    
+
+ul li:hover::after {
+  animation: spreadUnderline 0.2s forwards ease-out;
+}
+
+@keyframes spreadUnderline {
+  0% {
+    left: 50%;
+    width: 0;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.active{
+    color: #30AF5b;
+    font-weight: 600;
+}
+
+.toggle{
+  position:relative;
+    animation: fill-from-right 1s ease-in;
+}
+.toggle::before{
+  content: " ";
+  top:0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height:0%;
+  z-index:-1;
+}
+.toggle:hover::before{
+  width: 100%;
+  height:100%;
+}
+
+@keyframes fill-from-right{
+    0% {
+        left:100;
+    }
+    100% {
+        left:0;
+    }
+}

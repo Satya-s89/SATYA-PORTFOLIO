@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Custom font import */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Utility class for manual use */
+.font-ClashDisplay {
+  font-family: 'ClashDisplay', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Apply font globally */
+* {
+  font-family: 'ClashDisplay', sans-serif;
+}
+
+/* Body background */
+body {
+  background-color: #F7F8FC;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+/* Main layout container */
+main {
+  width: 100%;
+  min-height: 500px; /* Use min-height so it expands */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
